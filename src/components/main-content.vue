@@ -1,6 +1,56 @@
 <template>
   <div class='main-content'>
     <div class="main-side">
+      <div class="side-wrap">
+        <div class="side-group">
+          <div class="title">title1</div>
+          <div class="side-item">item1</div>
+          <div class="side-item">item1</div>
+          <div class="side-item">item1</div>
+        </div>
+        <div class="side-group">
+          <div class="title">title1</div>
+          <div class="side-item">item1</div>
+          <div class="side-item">item1</div>
+          <div class="side-item">item1</div>
+        </div>
+        <div class="side-group">
+          <div class="title">title1</div>
+          <div class="side-item">item1</div>
+          <div class="side-item">item1</div>
+          <div class="side-item">item1</div>
+        </div>
+        <div class="side-group">
+          <div class="title">title1</div>
+          <div class="side-item">item1</div>
+          <div class="side-item">item1</div>
+          <div class="side-item">item1</div>
+        </div>
+        <div class="side-group">
+          <div class="title">title1</div>
+          <div class="side-item">item1</div>
+          <div class="side-item">item1</div>
+          <div class="side-item">item1</div>
+        </div>
+        <div class="side-group">
+          <div class="title">title1</div>
+          <div class="side-item">item1</div>
+          <div class="side-item">item1</div>
+          <div class="side-item">item1</div>
+        </div>
+        <div class="side-group">
+          <div class="title">title1</div>
+          <div class="side-item">item1</div>
+          <div class="side-item">item1</div>
+          <div class="side-item">item1</div>
+        </div>
+        <div class="side-group">
+          <div class="title">title1</div>
+          <div class="side-item">item1</div>
+          <div class="side-item">item1</div>
+          <div class="side-item">item1</div>
+        </div>
+      </div>
     </div>
     <div class="main-cnt">
        <div class="div"></div>
@@ -25,6 +75,11 @@ export default {
     height: calc(100vh - 5rem - 2px);
     width: 150px;
     background: lightgreen;
+    .side-wrap{
+      .side-group{
+        margin-bottom: 10px;
+      }
+    }
   }
   .main-cnt{
     margin-left: 150px;
