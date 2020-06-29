@@ -4,7 +4,7 @@
     <main-content>
       <!-- <router-view></router-view> -->
     </main-content>
-    <main-footer></main-footer>
+    <main-footer v-if="false"></main-footer>
   </div>
 </template>
 <script>
