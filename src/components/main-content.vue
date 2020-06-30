@@ -53,29 +53,36 @@
       </div>
     </div>
     <div class="main-cnt">
-       <div class="div"></div>
+       <div class="md-cnt">
+         <Api/>
+       </div>
     </div>
   </div>
 </template>
 <script>
+import Api from '../i18n/zh-CN/docs/api.md'
 export default {
   name: 'MainContent',
   data () {
     return {
       title: 'title'
     }
-  }
+  },
+  components: {Api}
 }
 </script>
 <style scoped lang="scss">
 .main-content{
   position: relative;
+  padding-top: 4rem;
   .main-side{
-    position: absolute;
+    position: fixed;
     height: calc(100vh - 5rem - 2px);
     width: 150px;
     background: lightgreen;
     .side-wrap{
+      height: 100%;
+      overflow: auto;
       .side-group{
         margin-bottom: 10px;
       }
@@ -88,11 +95,9 @@ export default {
     position: relative;
     top: 0;
     bottom: 0;
-    background: lightblue;
-    .div{
-      height: 1000px;
-      width: 100px;
-      background: lightcoral;
+    // background: lightblue;
+    .md-cnt{
+      padding-left: 20px;
     }
   }
 }

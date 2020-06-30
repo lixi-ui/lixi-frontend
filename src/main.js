@@ -7,6 +7,7 @@ import LixiUI from 'lixi-ui'
 import 'lixi-ui/lib/theme-chalk/index.css'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import demoBlock from './components/demo-block';
 import MainHeader from './components/main-header'
 import MainFooter from './components/main-footer'
 import MainContent from './components/main-content'
@@ -16,6 +17,7 @@ Vue.config.productionTip = false
 Vue.use(LixiUI)
 Vue.use(ElementUI)
 
+Vue.component('demo-block', demoBlock)
 Vue.component('main-header', MainHeader)
 Vue.component('main-content', MainContent)
 Vue.component('main-footer', MainFooter)

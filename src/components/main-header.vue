@@ -103,6 +103,7 @@ export default {
 <style lang="scss" scoped>
   .main-header{
     display: flex;
+    position: fixed;
     .main-nav-left{
       flex: none;
       width: 110px;
