@@ -54,13 +54,13 @@
     </div>
     <div class="main-cnt">
        <div class="md-cnt">
-         <Api/>
+         <Introduce/>
        </div>
     </div>
   </div>
 </template>
 <script>
-import Api from '../i18n/zh-CN/docs/api.md'
+import Introduce from '../i18n/zh-CN/docs/introduce.md'
 export default {
   name: 'MainContent',
   data () {
@@ -68,7 +68,7 @@ export default {
       title: 'title'
     }
   },
-  components: {Api}
+  components: {Introduce}
 }
 </script>
 <style scoped lang="scss">
