@@ -3,17 +3,20 @@
     <main-header></main-header>
     <main-content>
       <!-- <router-view></router-view> -->
-      <home/>
+      <!-- <home/> -->
+      <docs/>
     </main-content>
     <main-footer v-if="false"></main-footer>
   </div>
 </template>
 <script>
 import Home from './pages/home/index.vue'
+import docs from './pages/docs/index.vue'
 export default {
   name: 'App',
   components: {
-    Home: Home
+    Home: Home,
+    docs: docs
   }
 }
 </script>
