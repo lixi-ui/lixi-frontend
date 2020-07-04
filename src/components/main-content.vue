@@ -54,7 +54,7 @@
     </div>
     <div class="main-cnt">
        <div class="md-cnt">
-         <Introduce/>
+         <slot></slot>
        </div>
     </div>
   </div>

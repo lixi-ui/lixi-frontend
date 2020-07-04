@@ -2,7 +2,8 @@
 const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
-const vueLoaderConfig = require('./vue-loader.conf')
+// const VueLoaderPlugin = require('vue-loader/lib/plugin');
+// const vueLoaderConfig = require('./vue-loader.conf')
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
@@ -40,11 +41,14 @@ module.exports = {
   },
   module: {
     rules: [
-      ...(config.dev.useEslint ? [createLintingRule()] : []),
       {
         test: /\.vue$/,
         loader: 'vue-loader',
-        options: vueLoaderConfig
+        options: {
+          compilerOptions: {
+            preserveWhitespace: false
+          }
+        }
       },
       {
         test: /\.js$/,
