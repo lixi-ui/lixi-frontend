@@ -23,12 +23,13 @@
                   "title": "前端"
                 }
               ]
-            },
-            {
-              "path": "/api",
-              "title": "api 接口"
             }
           ]
+        },
+        {
+          "groupName": "Api",
+          "path": "/api",
+          "title": "api 接口"
         }
       ]
     }

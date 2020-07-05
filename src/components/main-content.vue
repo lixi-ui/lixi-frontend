@@ -26,7 +26,12 @@
   export default {
     name: 'MainContent',
     props:{
-      nav: []
+      nav: {
+        type: Array,
+        default: function(){
+          return []
+        }
+      }
     },
     data () {
       return {
