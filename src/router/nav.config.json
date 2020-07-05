@@ -1,0 +1,72 @@
+{
+  "zh-CN": [
+    {
+      "name": "组件",
+      "groups": [
+        {
+          "groupName": "Basic",
+          "list": [
+            {
+              "path": "/plan",
+              "title": "plan 计划"
+            },
+            {
+              "path": "/api",
+              "title": "api 接口"
+            }
+          ]
+        },
+        {
+          "groupName": "Form",
+          "list": [
+            {
+              "path": "/radio",
+              "title": "Radio 单选框"
+            },
+            {
+              "path": "/checkbox",
+              "title": "Checkbox 多选框"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "es": [
+    {
+      "name": "Changelog",
+      "path": "/changelog"
+    },
+    {
+      "name": "Components",
+      "groups": [
+        {
+          "groupName": "Basic",
+          "list": [
+            {
+              "path": "/layout",
+              "title": "Layout"
+            },
+            {
+              "path": "/container",
+              "title": "Layout Container"
+            }
+          ]
+        },
+        {
+          "groupName": "Form",
+          "list": [
+            {
+              "path": "/radio",
+              "title": "Radio"
+            },
+            {
+              "path": "/checkbox",
+              "title": "Checkbox"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

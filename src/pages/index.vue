@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page-component">
     初始化
   </div>
 </template>
