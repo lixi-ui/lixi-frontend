@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <main-header></main-header>
-    <main-content class="page-component">
+    <main-content class="page-component" :nav="nav">
       <router-view></router-view>
       <!-- <home/> -->
       <!-- <docs/> -->
@@ -12,8 +12,14 @@
 <script>
 import Home from './pages/home/index.vue'
 import docs from './pages/docs/index.vue'
+import navsData from './router/nav.config.json'
 export default {
   name: 'App',
+  data(){
+    return {
+      nav: navsData["zh-CN"][0]["groups"][0].list
+    }
+  },
   components: {
     Home: Home,
     docs: docs

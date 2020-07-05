@@ -2,53 +2,15 @@
   <div class='main-content'>
     <div class="main-side">
       <div class="side-wrap">
-        <div class="side-group">
-          <div class="title">title1</div>
-          <div class="side-item">item1</div>
-          <div class="side-item">item1</div>
-          <div class="side-item">item1</div>
-        </div>
-        <div class="side-group">
-          <div class="title">title1</div>
-          <div class="side-item">item1</div>
-          <div class="side-item">item1</div>
-          <div class="side-item">item1</div>
-        </div>
-        <div class="side-group">
-          <div class="title">title1</div>
-          <div class="side-item">item1</div>
-          <div class="side-item">item1</div>
-          <div class="side-item">item1</div>
-        </div>
-        <div class="side-group">
-          <div class="title">title1</div>
-          <div class="side-item">item1</div>
-          <div class="side-item">item1</div>
-          <div class="side-item">item1</div>
-        </div>
-        <div class="side-group">
-          <div class="title">title1</div>
-          <div class="side-item">item1</div>
-          <div class="side-item">item1</div>
-          <div class="side-item">item1</div>
-        </div>
-        <div class="side-group">
-          <div class="title">title1</div>
-          <div class="side-item">item1</div>
-          <div class="side-item">item1</div>
-          <div class="side-item">item1</div>
-        </div>
-        <div class="side-group">
-          <div class="title">title1</div>
-          <div class="side-item">item1</div>
-          <div class="side-item">item1</div>
-          <div class="side-item">item1</div>
-        </div>
-        <div class="side-group">
-          <div class="title">title1</div>
-          <div class="side-item">item1</div>
-          <div class="side-item">item1</div>
-          <div class="side-item">item1</div>
+        <div class="side-group" v-for="(item,index) in nav" :key="index">
+          <div class="title">{{ item.title }}</div>
+          <div class="side-item"  v-for="(item1,i) in item.list" :key="i">
+            <router-link
+              active-class="active"
+              :to="item1.path">
+                {{ item1.title }}
+            </router-link>
+          </div>
         </div>
       </div>
     </div>
@@ -60,16 +22,19 @@
   </div>
 </template>
 <script>
-import Introduce from '../i18n/zh-CN/docs/introduce.md'
-export default {
-  name: 'MainContent',
-  data () {
-    return {
-      title: 'title'
-    }
-  },
-  components: {Introduce}
-}
+  import Introduce from '../i18n/zh-CN/docs/introduce.md'
+  export default {
+    name: 'MainContent',
+    props:{
+      nav: []
+    },
+    data () {
+      return {
+        title: 'title'
+      }
+    },
+    components: {Introduce}
+  }
 </script>
 <style scoped lang="scss">
 .main-content{
