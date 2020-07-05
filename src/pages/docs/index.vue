@@ -8,8 +8,8 @@
 
 <script>
 import Vue from 'vue'
-import plan from './plan/index.md'
-import planEs from './plan/index-es.md'
+import plan from './plan/zh-CN/index.md'
+import planEs from './plan/es/index.md'
 
 
 export default {

@@ -1,31 +1,32 @@
 {
   "zh-CN": [
     {
-      "name": "组件",
+      "name": "文档",
       "groups": [
         {
-          "groupName": "Basic",
+          "groupName": "Docs",
           "list": [
             {
               "path": "/plan",
-              "title": "plan 计划"
+              "title": "plan 计划",
+              "list": [
+                {
+                  "path": "/index",
+                  "title": "plan 计划"
+                },
+                {
+                  "path": "/lixi-js",
+                  "title": "框架"
+                },
+                {
+                  "path": "/lixi-frontend",
+                  "title": "前端"
+                }
+              ]
             },
             {
               "path": "/api",
               "title": "api 接口"
-            }
-          ]
-        },
-        {
-          "groupName": "Form",
-          "list": [
-            {
-              "path": "/radio",
-              "title": "Radio 单选框"
-            },
-            {
-              "path": "/checkbox",
-              "title": "Checkbox 多选框"
             }
           ]
         }
