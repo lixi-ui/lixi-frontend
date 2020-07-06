@@ -65,7 +65,6 @@
     position: relative;
     top: 0;
     bottom: 0;
-    // background: lightblue;
     .md-cnt{
       padding-left: 20px;
     }

@@ -1,35 +1,34 @@
 {
   "zh-CN": [
     {
+      "name": "首页",
+      "path": "/home"
+    },
+    {
       "name": "文档",
-      "groups": [
+      "path": "/docs",
+      "children": [
         {
-          "groupName": "Docs",
-          "list": [
+          "path": "/plan",
+          "name": "plan 计划",
+          "children": [
             {
-              "path": "/plan",
-              "title": "plan 计划",
-              "list": [
-                {
-                  "path": "/index",
-                  "title": "plan 计划"
-                },
-                {
-                  "path": "/lixi-js",
-                  "title": "框架"
-                },
-                {
-                  "path": "/lixi-frontend",
-                  "title": "前端"
-                }
-              ]
+              "path": "/index",
+              "name": "plan 计划"
+            },
+            {
+              "path": "/lixi-js",
+              "name": "框架"
+            },
+            {
+              "path": "/lixi-frontend",
+              "name": "前端"
             }
           ]
         },
         {
-          "groupName": "Api",
           "path": "/api",
-          "title": "api 接口"
+          "name": "接口"
         }
       ]
     }

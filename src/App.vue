@@ -17,7 +17,7 @@ export default {
   name: 'App',
   data(){
     return {
-      nav: navsData["zh-CN"][0]["groups"][0].list
+      nav: navsData["zh-CN"][1]["groups"][0].list
     }
   },
   components: {

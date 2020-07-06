@@ -99,7 +99,6 @@ export default {
 <style lang="scss" scoped>
 .home {
   width: 100%;
-  // height: 100px;
   background: #ddd;
   .top{
     padding: 40px 40px 30px;

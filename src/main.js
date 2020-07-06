@@ -3,8 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import LixiUI from 'lixi-ui'
-import 'lixi-ui/lib/theme-chalk/index.css'
+// import LixiUI from 'lixi-ui'
+// import 'lixi-ui/lib/theme-chalk/index.css'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import demoBlock from './components/demo-block';
@@ -14,7 +14,7 @@ import MainContent from './components/main-content'
 import './style/index.scss'
 
 Vue.config.productionTip = false
-Vue.use(LixiUI)
+// Vue.use(LixiUI)
 Vue.use(ElementUI)
 
 Vue.component('demo-block', demoBlock)
