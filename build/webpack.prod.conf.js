@@ -37,6 +37,18 @@ const webpackConfig = merge(baseWebpackConfig, {
       name: 'common'
     }
   },
+  externals: {
+    'vue-router': 'VueRouter',
+    vue: 'Vue',
+    'element-ui': 'ELEMENT'
+  },
+  performance: {
+    hints: false
+  },
+  stats: {
+    children: false
+  },
+  devtool: false,
   plugins: [
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
     new VueLoaderPlugin(),
