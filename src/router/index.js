@@ -19,7 +19,7 @@ const load = function(lang, path) {
 const LOAD_DOCS_MAP = {
   'zh-CN': path => {
     return r => require.ensure([], () =>
-      r(require(`../pages/${path}.md`)),
+      r(require(`../pages${path}.md`)),
     'zh-CN');
   }
 };
@@ -33,6 +33,7 @@ var routes = []
 navConfig['zh-CN'].forEach(item => {
   var obj = {
     path: item.path,
+    redirect: item.path + `/plan`,
     name: "component-" + item.name,
     meta: "",
     component: load('zh-CN', item.path)
@@ -40,8 +41,10 @@ navConfig['zh-CN'].forEach(item => {
   if (item.children) {
     var routes1 = []
     item.children.forEach(item1 => {
+      console.log('item1',item.path + item1.path)
       var obj1 = {
-        path: item.path + item1.path,
+        path: item1.name,
+        redirect: item.path + item1.path + `/index`,
         name: "component-" + item1.name,
         meta: "",
         component: load('zh-CN', item.path + item1.path)
@@ -50,9 +53,11 @@ navConfig['zh-CN'].forEach(item => {
         var routes2 = []
         item1.children.forEach(item2 => {
           var obj2 = {
-            path: item.path + item1.path + item2.path,
+            path: item2.name,
             name: "component-" + item2.name,
-            meta: "",
+            meta: {
+              path: item.path + item1.path + item2.path
+            },
             component: loadDocs('zh-CN', item.path + item1.path + '/zh-CN' + item2.path)
           }
           routes2.push(obj2)

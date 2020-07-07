@@ -7,7 +7,7 @@
           <div class="side-item"  v-for="(item1,i) in item.list" :key="i">
             <router-link
               active-class="active"
-              :to="item1.path">
+              :to="item1.mate.path">
                 {{ item1.title }}
             </router-link>
           </div>

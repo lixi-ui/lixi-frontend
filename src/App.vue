@@ -17,12 +17,17 @@ export default {
   name: 'App',
   data(){
     return {
+      meta: this.$route.meta,
       nav: []
     }
   },
   components: {
     Home: Home,
     docs: docs
+  },
+  mounted(){
+    console.log('nav?',navsData["zh-CN"][1].children[0].children);
+    this.nav = navsData["zh-CN"][1].children[0].children
   }
 }
 </script>

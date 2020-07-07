@@ -1,8 +1,8 @@
 <template>
   <div class="page-component">
-    <h1 @click="handlerClick">Docs</h1>
-    <!-- <components :is="componentsName">
-    </components> -->
+    <h2>
+      plan
+    </h2>
     <router-view>
     </router-view>
   </div>
@@ -10,8 +10,8 @@
 
 <script>
 import Vue from 'vue'
-import plan from './plan/zh-CN/index.md'
-import planEs from './plan/es/index.md'
+import plan from './zh-CN/index.md'
+import planEs from './es/index.md'
 
 
 export default {

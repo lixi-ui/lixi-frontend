@@ -1,8 +1,6 @@
 <template>
   <div class="page-component">
-    <h1 @click="handlerClick">Docs</h1>
-    <!-- <components :is="componentsName">
-    </components> -->
+    <el-button @click="handlerClick">切换1</el-button>
     <router-view>
     </router-view>
   </div>
@@ -10,15 +8,11 @@
 
 <script>
 import Vue from 'vue'
-import plan from './plan/zh-CN/index.md'
-import planEs from './plan/es/index.md'
 
 
 export default {
   name: 'docs',
   components: {
-    plan: plan,
-    planEs
   },
   data(){
     return{
