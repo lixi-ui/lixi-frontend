@@ -1,5 +1,9 @@
 ### 介绍
 
+#### <a href="https://github.com/lixi-ui" target="_blank">项目链接</a>
+
+> author： `lingniker`,  mail: `lingyuanping@uotlook.com`
+
  | 序号 | 项目 | 说明 | 优先级别 | 完成进度 | 是否完成 | 达到基本标准 | 备注 |
  | -  | - | :-: | :-: | :-: | :-: | :-: |  :-: |
  | 1  | lixi-js             | 框架          | 3  | 10% | 否 | 否 | - |

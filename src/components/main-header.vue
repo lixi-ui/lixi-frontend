@@ -14,7 +14,7 @@
               <router-link
                 active-class="active"
                 :to="item.path">
-                  {{ item.name + item.path }}
+                  {{ item.name }}
               </router-link>
             </span>
              <span v-if="item.children">
@@ -24,11 +24,10 @@
                 </span>
                 <el-dropdown-menu slot="dropdown">
                   <el-dropdown-item v-for="(item1,index1) in item.children" :key="index1">
-                    {{ item1.name }}
                     <router-link
                       active-class="active"
                       :to="item1.urlPath">
-                        {{ item1.title }}
+                        {{ item1.name }}
                     </router-link>
                   </el-dropdown-item>
                 </el-dropdown-menu>
@@ -37,7 +36,7 @@
           </div>
 
 
-          <div class="nav-item">
+          <!-- <div class="nav-item">
             <el-dropdown :hide-on-click="false">
               <span class="el-dropdown-link">
                 学习<i class="el-icon-arrow-down el-icon--right"></i>
@@ -112,7 +111,7 @@
           </div>
           <div class="nav-item">
             参与翻译
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -128,7 +127,12 @@ export default {
     }
   },
   props: {
-    navAll:[]
+    navAll:{
+      type: Array,
+      default: function(){
+        return []
+      }
+    }
   }
 }
 </script>

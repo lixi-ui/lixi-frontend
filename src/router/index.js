@@ -31,12 +31,21 @@ function loadDocs(lang,path){
 var routes = []
 
 navConfig['zh-CN'].forEach(item => {
-  var obj = {
-    path: item.path,
-    redirect: item.path + `/plan`,
-    name: "component-" + item.name,
-    meta: "",
-    component: load('zh-CN', item.path)
+  var redirect = ''
+  var obj = {};
+  if(item.children){
+    obj = {
+      path: item.path,
+      redirect: item.path + item.children[0].path,
+      name: "component-" + item.name,
+      component: load('zh-CN', item.path)
+    }
+  } else {
+    obj = {
+      path: item.path,
+      name: "component-" + item.name,
+      component: load('zh-CN', item.path)
+    }
   }
   if (item.children) {
     var routes1 = []
@@ -70,6 +79,14 @@ navConfig['zh-CN'].forEach(item => {
   }
   routes.push(obj);
 })
+
+routes = routes.concat([{
+  path: '/',
+  redirect: '/home'
+}, {
+  path: '*',
+  redirect: '/home'
+}])
 
 export default new Router({
   mode: 'hash',
