@@ -11,19 +11,24 @@
         {
           "path": "/plan",
           "name": "plan",
+          "urlPath": "/docs/plan",
+          "title": "plan",
           "children": [
             {
               "path": "/index",
+              "urlPath": "/docs/plan/index",
               "name": "index",
-              "title": "plan index"
+              "title": "index"
             },
             {
               "path": "/lixi-js",
+              "urlPath": "/docs/plan/lixi-js",
               "name": "lixi-js",
               "title": "lixi-js"
             },
             {
               "path": "/lixi-frontend",
+              "urlPath": "/docs/plan/lixi-frontend",
               "name": "lixi-frontend",
               "title": "lixi-frontend"
             }

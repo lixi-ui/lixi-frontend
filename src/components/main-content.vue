@@ -4,10 +4,10 @@
       <div class="side-wrap">
         <div class="side-group" v-for="(item,index) in nav" :key="index">
           <div class="title">{{ item.title }}</div>
-          <div class="side-item"  v-for="(item1,i) in item.list" :key="i">
+          <div class="side-item"  v-for="(item1,i) in item.children" :key="i">
             <router-link
               active-class="active"
-              :to="item1.mate.path">
+              :to="item1.urlPath">
                 {{ item1.title }}
             </router-link>
           </div>
@@ -55,6 +55,9 @@
       overflow: auto;
       .side-group{
         margin-bottom: 10px;
+        .title{
+          color: red;
+        }
       }
     }
   }

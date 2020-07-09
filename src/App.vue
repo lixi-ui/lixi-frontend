@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <main-header></main-header>
+    <main-header :navAll="navAll"></main-header>
     <main-content class="page-component" :nav="nav">
       <router-view></router-view>
       <!-- <home/> -->
@@ -18,7 +18,8 @@ export default {
   data(){
     return {
       meta: this.$route.meta,
-      nav: []
+      nav: [],
+      navAll: []
     }
   },
   components: {
@@ -27,7 +28,8 @@ export default {
   },
   mounted(){
     console.log('nav?',navsData["zh-CN"][1].children[0].children);
-    this.nav = navsData["zh-CN"][1].children[0].children
+    this.nav = navsData["zh-CN"][1].children
+    this.navAll = navsData["zh-CN"]
   }
 }
 </script>

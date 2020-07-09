@@ -7,6 +7,36 @@
     <div class="main-nav-right">
       <div class="nav-right">
         <div class="nav-right-wrap">
+
+
+          <div class="nav-item" v-for="(item,index) in navAll" :key="index">
+            <span v-if="!item.children">
+              <router-link
+                active-class="active"
+                :to="item.path">
+                  {{ item.name + item.path }}
+              </router-link>
+            </span>
+             <span v-if="item.children">
+              <el-dropdown :hide-on-click="false">
+                <span class="el-dropdown-link">
+                  {{ item.name }}<i class="el-icon-arrow-down el-icon--right"></i>
+                </span>
+                <el-dropdown-menu slot="dropdown">
+                  <el-dropdown-item v-for="(item1,index1) in item.children" :key="index1">
+                    {{ item1.name }}
+                    <router-link
+                      active-class="active"
+                      :to="item1.urlPath">
+                        {{ item1.title }}
+                    </router-link>
+                  </el-dropdown-item>
+                </el-dropdown-menu>
+              </el-dropdown>
+            </span>
+          </div>
+
+
           <div class="nav-item">
             <el-dropdown :hide-on-click="false">
               <span class="el-dropdown-link">
@@ -96,6 +126,9 @@ export default {
       title: 'title',
       value: '选项1'
     }
+  },
+  props: {
+    navAll:[]
   }
 }
 </script>
