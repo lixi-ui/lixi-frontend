@@ -49,7 +49,7 @@
     position: fixed;
     height: calc(100vh - 5rem - 2px);
     width: 150px;
-    background: lightgreen;
+    // background: lightgreen;
     .side-wrap{
       height: 100%;
       overflow: auto;

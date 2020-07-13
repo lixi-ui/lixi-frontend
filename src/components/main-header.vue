@@ -36,7 +36,7 @@
           </div>
 
 
-          <!-- <div class="nav-item">
+          <div class="nav-item">
             <el-dropdown :hide-on-click="false">
               <span class="el-dropdown-link">
                 学习<i class="el-icon-arrow-down el-icon--right"></i>
@@ -111,7 +111,7 @@
           </div>
           <div class="nav-item">
             参与翻译
-          </div> -->
+          </div>
         </div>
       </div>
     </div>
@@ -153,7 +153,7 @@ export default {
     }
     .main-nav-right{
       flex-grow: 1;
-      background: #ddd;
+      // background: #ddd;
       .nav-right{
         display: inline-block;
         float: right;
