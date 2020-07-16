@@ -3,12 +3,11 @@
     <main-header :navAll="navAll"></main-header>
     <main-content class="page-component" :nav="nav">
       <router-view></router-view>
-      <!-- <home/> -->
-      <!-- <docs/> -->
     </main-content>
     <main-footer v-if="false"></main-footer>
   </div>
 </template>
+
 <script>
 import Home from './pages/home/index.vue'
 import docs from './pages/docs/index.vue'
