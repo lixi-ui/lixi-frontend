@@ -1,5 +1,5 @@
 <template>
-  <div class="page-component">
+  <div class="page-component page-container">
     <h1 @click="handlerClick">Docs</h1>
     <!-- <components :is="componentsName">
     </components> -->
