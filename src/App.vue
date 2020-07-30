@@ -4,7 +4,6 @@
     <main-content class="page-component" :nav="nav">
       <router-view></router-view>
     </main-content>
-    <main-footer v-if="false"></main-footer>
   </div>
 </template>
 

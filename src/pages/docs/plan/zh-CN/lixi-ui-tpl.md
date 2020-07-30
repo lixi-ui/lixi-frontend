@@ -30,6 +30,6 @@
 
 2. 开发更加的简单化。开发者的能力大幅提升。
 
-#### <a href="https://github.com/lixi-ui/lixi-ui-tpl" target="_blank">项目链接</a>
+> <a href="https://github.com/lixi-ui/lixi-ui-tpl" target="_blank">项目链接</a>
 
 > author： `lingniker`,  mail: `lingyuanping@uotlook.com`

@@ -18,6 +18,7 @@
        <div class="md-cnt">
          <slot></slot>
        </div>
+       <main-footer></main-footer>
     </div>
   </div>
 </template>
@@ -47,28 +48,52 @@
   padding-top: 4rem;
   .main-side{
     position: fixed;
-    height: calc(100vh - 5rem - 2px);
-    width: 150px;
+    height: calc(100vh - 4rem);
+    width: 200px;
+    // padding-left: 20px;
+    border-right: 1px solid lightblue;
     // background: lightgreen;
     .side-wrap{
       height: 100%;
       overflow: auto;
       .side-group{
         margin-bottom: 10px;
+        padding: 10px 20px;
         .title{
-          color: red;
+          color: #333;
+          padding-bottom: 5px;
+          margin-bottom: 5px;
+          font-weight: 600;
+          border-bottom: 1px solid lightgray;
+        }
+        .side-item{
+          a{
+            padding: 5px;
+            display: inline-block;
+            width: 100%;
+            color: #444;
+            text-decoration: none;
+            &:hover{
+              color: #fb6638;
+            }
+          }
+          .active{
+            color: #fb6638;
+          }
+
         }
       }
     }
   }
   .main-cnt{
-    margin-left: 150px;
-    min-height: calc(100vh - 5rem - 2px);
+    margin-left: 200px;
+    min-height: calc(100vh - 4rem - 1px);
     margin-bottom: 0px;
     position: relative;
     top: 0;
     bottom: 0;
     .md-cnt{
+      min-height: calc(100vh - 7.4rem - 2px);
       padding-left: 20px;
     }
   }

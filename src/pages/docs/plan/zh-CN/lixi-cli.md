@@ -31,6 +31,6 @@
 2. 也是能很好的使用 lixi-ui 系列的项目。
 
 
-#### <a href="https://github.com/lixi-ui/lixi-cli" target="_blank">项目链接</a>
+> <a href="https://github.com/lixi-ui/lixi-cli" target="_blank">项目链接</a>
 
 > author： `lingniker`,  mail: `lingyuanping@uotlook.com`

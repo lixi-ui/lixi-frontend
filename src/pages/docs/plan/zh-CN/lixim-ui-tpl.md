@@ -18,6 +18,6 @@
 
 1. 移动端暂无
 
-#### <a href="https://github.com/lixi-ui/lixim-ui-tpl" target="_blank">项目链接</a>
+> <a href="https://github.com/lixi-ui/lixim-ui-tpl" target="_blank">项目链接</a>
 
 > author： `lingniker`,  mail: `lingyuanping@uotlook.com`

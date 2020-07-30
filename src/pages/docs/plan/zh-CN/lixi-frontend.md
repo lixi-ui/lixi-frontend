@@ -67,6 +67,6 @@
 
 10. 易学规范。灵活高效。不要让你的想法其它人要求花很多的精力去了解，这就是初衷。
 
-### <a href="https://github.com/lixi-ui/lixi-frontend" target="_blank">项目链接</a>
+> <a href="https://github.com/lixi-ui/lixi-frontend" target="_blank">项目链接</a>
 
 > author： `lingniker`,  mail: `lingyuanping@uotlook.com`

@@ -30,6 +30,6 @@
 
 2. 可以快速的进行后台的开发, 规范一下。
 
-#### <a href="https://github.com/lixi-ui/lixi-backend-tpl" target="_blank">项目链接</a>
+> <a href="https://github.com/lixi-ui/lixi-backend-tpl" target="_blank">项目链接</a>
 
 > author： `lingniker`,  mail: `lingyuanping@uotlook.com`

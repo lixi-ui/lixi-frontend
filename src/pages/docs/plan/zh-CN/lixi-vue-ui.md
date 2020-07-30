@@ -27,6 +27,6 @@
 2. 使更多的人知道 lixi-ui.
 
 
-#### <a href="https://github.com/lixi-ui/lixi-vue-ui" target="_blank">项目链接</a>
+> <a href="https://github.com/lixi-ui/lixi-vue-ui" target="_blank">项目链接</a>
 
 > author： `lingniker`,  mail: `lingyuanping@uotlook.com`

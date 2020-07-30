@@ -35,6 +35,6 @@
 2. 实现前后端分离,通过express的模式，让前端更多的去了解后端,逐步向全栈的发展道路。
 
 
-#### <a href="https://github.com/lixi-ui" target="_blank">项目链接</a>
+> <a href="https://github.com/lixi-ui" target="_blank">项目链接</a>
 
 > author： `lingniker`,  mail: `lingyuanping@uotlook.com`

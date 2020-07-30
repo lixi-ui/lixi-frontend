@@ -31,6 +31,6 @@
 
 2. 这是一个进步的思想,能避免组件库的二次开发时,代码的规范性。不能规范的代码可以移动到此处。
 
-#### <a href="https://github.com/lixi-ui/lixi-ui-extend" target="_blank">项目链接</a>
+> <a href="https://github.com/lixi-ui/lixi-ui-extend" target="_blank">项目链接</a>
 
 > author： `lingniker`,  mail: `lingyuanping@uotlook.com`

@@ -26,6 +26,6 @@
 
 2. 模板提供了很好的管理方式。
 
-#### <a href="https://github.com/lixi-ui/lixi-ui-tpl" target="_blank">项目链接</a>
+> <a href="https://github.com/lixi-ui/lixi-ui-tpl" target="_blank">项目链接</a>
 
 > author： `lingniker`,  mail: `lingyuanping@uotlook.com`

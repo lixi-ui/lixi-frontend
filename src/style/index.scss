@@ -17,13 +17,13 @@
 }
 .main-content{
   min-height: calc(100vh - 3.6rem - 2px);
-  padding: .7rem 1.5rem;
   border-bottom: 1px solid lightgray;
 }
 .main-footer{
   padding: .7rem 1.5rem;
   line-height: 2rem;
   text-align: center;
+  border-top: 1px solid lightgray;
 }
 
 .page-container {

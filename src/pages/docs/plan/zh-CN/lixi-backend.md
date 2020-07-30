@@ -34,6 +34,6 @@
 
 3. 让其前端开发者也了解后台的开发。
 
-#### <a href="https://github.com/lixi-ui/lixi-backend" target="_blank">项目链接</a>
+> <a href="https://github.com/lixi-ui/lixi-backend" target="_blank">项目链接</a>
 
 > author： `lingniker`,  mail: `lingyuanping@uotlook.com`

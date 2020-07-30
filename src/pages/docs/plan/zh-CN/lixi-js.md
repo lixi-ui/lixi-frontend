@@ -28,6 +28,6 @@
 
 3. 对框架会有很深的了解,触使自己去了解更底层的知识。更好把握前端动向。
 
-#### <a href="https://github.com/lixi-ui/lixi-js" target="_blank">项目链接</a>
+> <a href="https://github.com/lixi-ui/lixi-js" target="_blank">项目链接</a>
 
 > author： `lingniker`,  mail: `lingyuanping@uotlook.com`
