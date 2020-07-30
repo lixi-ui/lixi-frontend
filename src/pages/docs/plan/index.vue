@@ -1,6 +1,6 @@
 <template>
   <div class="page-component">
-    <h2>plan</h2>
+    <h3>plan</h3>
     <router-view>
     </router-view>
   </div>
