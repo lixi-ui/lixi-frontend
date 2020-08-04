@@ -5,10 +5,15 @@ import navConfig from './nav.config.json'
 Vue.use(Router)
 
 const LOAD_MAP = {
-  'zh-CN': path => {
-    return r => require.ensure([], () =>
-      r(require(`../pages${path}/index.vue`)),
-    'zh-CN');
+  'zh-CN': function(path) {
+    return function(r){
+      return require.ensure(
+        [],
+        function() {
+          return r(require(`../pages${path}/index.vue`))
+        },
+        'zh-CN')
+    };
   }
 };
 
