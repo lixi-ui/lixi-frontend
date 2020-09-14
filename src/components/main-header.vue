@@ -95,22 +95,28 @@
               </el-dropdown-menu>
             </el-dropdown>
           </div>
+           <!-- 语言选择器 -->
           <div class="nav-item">
-            <el-dropdown :hide-on-click="false">
+            <el-dropdown
+              trigger="click"
+              class="nav-dropdown nav-lang"
+              :class="{ 'is-active': langDropdownVisible }">
               <span class="el-dropdown-link">
-                多语言<i class="el-icon-arrow-down el-icon--right"></i>
+                {{ displayedLang }}
+                <i class="el-icon-arrow-down el-icon--right"></i>
               </span>
-              <el-dropdown-menu slot="dropdown">
-                <el-dropdown-item>黄金糕</el-dropdown-item>
-                <el-dropdown-item>狮子头</el-dropdown-item>
-                <el-dropdown-item>螺蛳粉</el-dropdown-item>
-                <el-dropdown-item disabled>双皮奶</el-dropdown-item>
-                <el-dropdown-item divided>蚵仔煎</el-dropdown-item>
+              <el-dropdown-menu
+                slot="dropdown"
+                class="nav-dropdown-list"
+                @input="handleLangDropdownToggle">
+                <el-dropdown-item
+                  v-for="(value, key) in langs"
+                  :key="key"
+                  @click.native="switchLang(value)">
+                  {{ value }}
+                </el-dropdown-item>
               </el-dropdown-menu>
             </el-dropdown>
-          </div>
-          <div class="nav-item">
-            参与翻译
           </div>
         </div>
       </div>
@@ -125,7 +131,16 @@ export default {
   data () {
     return {
       title: 'title',
-      value: '选项1'
+      value: '选项1',
+      langDropdownVisible: true,
+      displayedLang: '中文',
+      lang: 'zh-CN',
+      langs: {
+        'zh-CN': '中文',
+        'en-US': 'English',
+        'es': 'Español',
+        'fr-FR': 'Français'
+      }
     }
   },
   props: {
@@ -135,9 +150,21 @@ export default {
         return []
       }
     }
+  },
+  methods: {
+    switchLang(targetLang){
+      if (this.lang == targetLang) {
+        return;
+      }
+      localStorage.setItem('ELEMENT_LANGUAGE', targetLang);
+      this.$router.push(this.$route.path.replace(this.lang, targetLang));
+    },
+    handleLangDropdownToggle(){}
   }
 }
 </script>
+
+
 
 <style lang="scss" scoped>
   .main-header{
